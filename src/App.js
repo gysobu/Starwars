@@ -21,7 +21,7 @@ class App extends Component {
        
       console.log(json.movies)
       this.setState({
-        movies:json.movies
+        movies:json.movies,
 
       })
 

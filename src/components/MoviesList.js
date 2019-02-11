@@ -12,11 +12,13 @@ class MoviesList extends React.Component {
         let movieItems =this.props.movies.map((element,index)=>{
             return <li key={index}>
                    <img className="hero-image" src={`${IMAGES_URL}${element.hero_image}`}/>
-               <label>{element.title}</label> 
+               <label>{element.title}</label> <br />
+               <label>{this.props.company}</label>
                  </li> 
                  })
         return (
             <div>
+                <label>{this.props.company}</label>
                 {movieItems}   
             </div>
             
